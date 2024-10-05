@@ -35,16 +35,13 @@
 
 ---
 
-<h2 align="center">📡 Network Activity</h2>
+<h2 align="center">🤖 AI & Hacker Synergy</h2>
 <p align="center">
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=letho1608&bg_color=000000&color=00FF00&line=00FF00&point=FFFFFF&hide_border=true" alt="GitHub Activity Graph" width="100%" />
+  <img src="https://media.giphy.com/media/3o7aD5j8fPrypYZY8I/giphy.gif" alt="AI Hacker" width="400px" />
 </p>
 
----
-
-<h2 align="center">📟 Incoming Terminal Commands</h2>
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Monospace&weight=500&size=20&pause=1500&color=00FF00&background=000000&center=true&vCenter=true&width=600&height=70&lines=>+letho1608+Executing+code...;>+Scanning+for+open+ports...;>+Breaching+defenses...;>+Compiling+payload...;>+Successful+deployment..." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Monospace&size=24&pause=1000&color=00FF00&background=000000&width=435&lines=Exploring+the+boundaries+of+AI...;Harnessing+the+power+of+data...;Creating+the+future+with+code!" alt="Typing Effect" />
 </p>
 
 ---
@@ -55,36 +52,18 @@
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" alt="Hacker Meme" width="400px" />
-</p>
-
-<p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&background=000000&color=00FF00" alt="Random Quote" />
 </p>
 
 ---
 
-<h2 align="center">👾 Fun Hackerspace</h2>
+<h2 align="center">🛠️ Code in Action</h2>
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aCTPPm4OHfRLSH6/giphy.gif" alt="Hacker GIF" width="300px" />
+  <img src="https://media.giphy.com/media/l4KibJjcrD5aL2O2kY/giphy.gif" alt="Hacker Coding" width="400px" />
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l41Yx27Tm3cXrXhyc/giphy.gif" alt="Hacker Typing GIF" width="400px" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Monospace&size=24&pause=1000&color=00FF00&background=000000&width=435&lines=Hack+the+Planet...;Stay+in+Stealth+Mode...;Encryption+is+Key!" alt="Typing Effect" />
+  <img src="https://readme-typing-svg.demolab.com?font=Monospace&weight=500&size=20&pause=1500&color=00FF00&background=000000&center=true&vCenter=true&width=600&height=70&lines=>+letho1608+Executing+code...;>+Scanning+for+open+ports...;>+Breaching+defenses...;>+Compiling+payload...;>+Successful+deployment..." alt="Typing SVG" />
 </p>
 
 ---
-
-<h2 align="center">📂 Hidden Files Detected</h2>
-<p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Coding" width="300px" />
-</p>
-
-<h2 align="center">⚠️ Warning: Unauthorized Access Detected!</h2>
-<p align="center">
-  <img src="https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif" alt="Hacker Alert" width="300px" />
-</p>
