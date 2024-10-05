@@ -1,7 +1,3 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Monospace&size=40&pause=1000&color=00FF00&center=true&vCenter=true&width=500&height=70&lines=Welcome+to+My+Cyber+Lair!;Initializing+Hacker+Mode...;Decrypting+Knowledge...">
-</h1>
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=letho1608&label=Hacker%20Detection&color=brightgreen&style=plastic" alt="Profile views" />
 </p>
@@ -11,14 +7,6 @@
 <h2 align="center">🖥️ Terminal Hacks in Progress...</h2>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=letho1608&show_icons=true&theme=dark&icon_color=00FF00&text_color=00FF00&bg_color=000000" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=letho1608&theme=dark&hide_border=true&stroke=00FF00&ring=00FF00&fire=00FF00" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=letho1608&layout=compact&theme=dark&text_color=00FF00&bg_color=000000" alt="Top Languages" />
 </p>
 
 ---
@@ -38,10 +26,6 @@
 <h2 align="center">🤖 AI & Hacker Synergy</h2>
 <p align="center">
   <img src="https://media.giphy.com/media/3o7aD5j8fPrypYZY8I/giphy.gif" alt="AI Hacker" width="400px" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Monospace&size=24&pause=1000&color=00FF00&background=000000&width=435&lines=Exploring+the+boundaries+of+AI...;Harnessing+the+power+of+data...;Creating+the+future+with+code!" alt="Typing Effect" />
 </p>
 
 ---
