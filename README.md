@@ -57,7 +57,11 @@
 
 ---
 
-<h2 align="center">🛠️ Code in Action</h2>
+<h2 align="center">🐍 Snake Animation on Contributions</h2>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
+</p>
+
 <p align="center">
   <img src="https://media.giphy.com/media/l4KibJjcrD5aL2O2kY/giphy.gif" alt="Hacker Coding" width="400px" />
 </p>
@@ -65,5 +69,3 @@
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Monospace&weight=500&size=20&pause=1500&color=00FF00&background=000000&center=true&vCenter=true&width=600&height=70&lines=>+letho1608+Executing+code...;>+Scanning+for+open+ports...;>+Breaching+defenses...;>+Compiling+payload...;>+Successful+deployment..." alt="Typing SVG" />
 </p>
-
----
