@@ -7,7 +7,7 @@
 <h2 align="center" style="color: #00ff00;">💻 Welcome to My Cyber Lair 💻</h2>
 
 <div style="background-color: #1e1e1e; padding: 10px; border-radius: 5px;">
-  <h3 style="color: #00ff00; text-shadow: 0 0 5px #00FF00;">🔒 Security Notes</h3>
+  <h3 style="color: #00ff00;">🔒 Security Notes</h3>
   <p style="color: #ffffff;">Always use two-factor authentication for enhanced security!</p>
 </div>
 
@@ -25,7 +25,7 @@ def hack_the_system():
 ---
 
 <div style="background-color: #1e1e1e; padding: 10px; border-radius: 5px;">
-  <h3 style="color: #00ff00; text-shadow: 0 0 5px #00FF00;">🚨 Important Notice</h3>
+  <h3 style="color: #00ff00;">🚨 Important Notice</h3>
   <p style="color: #ffffff;">This repository may contain sensitive data. Handle with care!</p>
 </div>
 
@@ -61,10 +61,8 @@ def hack_the_system():
 
 ---
 
-<div style="color: #00ff00; animation: glitch 1s infinite;">
-  <h3>💾 Glitch Effect Example 💾</h3>
-  <p style="color: #ffffff;">This text has a glitch effect!</p>
-</div>
+<h3 align="center" style="color: #00ff00;">💾 Glitch Effect Example 💾</h3>
+<p align="center" style="color: #ffffff;">This text has a glitch effect! <br> **HACKER MODE ACTIVATED**</p>
 
 <p align="center">
   <marquee behavior="scroll" direction="left" scrollamount="10" style="color: #00ff00;">⚡ Stay sharp and keep hacking! ⚡</marquee>
