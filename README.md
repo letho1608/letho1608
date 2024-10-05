@@ -23,13 +23,6 @@
 
 ---
 
-<h2 align="center">🤖 AI & Hacker Synergy</h2>
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7aD5j8fPrypYZY8I/giphy.gif" alt="AI Hacker" width="400px" />
-</p>
-
----
-
 <h2 align="center">💀 Dark Web Contributions</h2>
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/ashutosh00710/github-profile-3d-contrib@master/docs/preview.gif" alt="3D Contribution Graph" width="600px"/>
@@ -44,10 +37,6 @@
 <h2 align="center">🐍 Snake Animation on Contributions</h2>
 <p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
-</p>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/l4KibJjcrD5aL2O2kY/giphy.gif" alt="Hacker Coding" width="400px" />
 </p>
 
 <p align="center">
