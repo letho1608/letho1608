@@ -37,7 +37,7 @@
 
 <h2 align="center">📡 Network Activity</h2>
 <p align="center">
-  <img src="https://activity-graph.herokuapp.com/graph?username=letho1608&theme=github-dark&hide_border=true&line=00FF00&point=FFFFFF" alt="GitHub Activity Graph" width="100%"/>
+  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=letho1608&bg_color=000000&color=00FF00&line=00FF00&point=FFFFFF&hide_border=true" alt="GitHub Activity Graph" width="100%" />
 </p>
 
 ---
@@ -51,11 +51,11 @@
 
 <h2 align="center">💀 Dark Web Contributions</h2>
 <p align="center">
-  <img src="https://github.com/letho1608/letho1608/raw/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="600px"/>
+  <img src="https://cdn.jsdelivr.net/gh/ashutosh00710/github-profile-3d-contrib@master/docs/preview.gif" alt="3D Contribution Graph" width="600px"/>
 </p>
 
 <p align="center">
-  <img src="https://readme-jokes.vercel.app/api?theme=dark&bgColor=000000&textColor=00FF00" alt="Jokes" />
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" alt="Hacker Meme" width="400px" />
 </p>
 
 <p align="center">
