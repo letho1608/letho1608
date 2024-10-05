@@ -58,3 +58,17 @@ def hack_the_system():
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&background=000000&color=00FF00" alt="Random Quote" />
 </p>
+
+---
+
+<div style="color: #00ff00; animation: glitch 1s infinite;">
+  <h3>💾 Glitch Effect Example 💾</h3>
+  <p style="color: #ffffff;">This text has a glitch effect!</p>
+</div>
+
+<p align="center">
+  <marquee behavior="scroll" direction="left" scrollamount="10" style="color: #00ff00;">⚡ Stay sharp and keep hacking! ⚡</marquee>
+</p>
+
+---
+
