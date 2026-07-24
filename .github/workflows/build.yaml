@@ -31,10 +31,12 @@ jobs:
           USER_NAME: ${{ secrets.USER_NAME }}
         run: python today.py
       - name: Commit
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |-
           git add .
           git diff
           git config --global user.email "letho1608@users.noreply.github.com"
           git config --global user.name "letho1608/GitHub-Actions-Bot"
           git commit -m "Updated README" -a || echo "No changes to commit"
-          git push
+          git push https://$ACCESS_TOKEN@github.com/letho1608/letho1608.git
