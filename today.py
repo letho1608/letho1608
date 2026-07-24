@@ -99,10 +99,12 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
     if request.status_code == 200:
+        data = request.json()['data']['user']['repositories']
         if count_type == 'repos':
-            return request.json()['data']['user']['repositories']['totalCount']
+            return data['totalCount']
         elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+            edges = data.get('edges') or []
+            return stars_counter(edges)
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -400,7 +402,7 @@ def top_repo_getter(login):
     }'''
     variables = {'login': login}
     request = simple_request(top_repo_getter.__name__, query, variables)
-    edges = request.json()['data']['user']['repositories']['edges']
+    edges = request.json()['data']['user']['repositories'].get('edges') or []
     if edges:
         repo = edges[0]['node']
         return '{} ({:,}\u2605)'.format(repo['nameWithOwner'].split('/')[-1], repo['stargazers']['totalCount'])
