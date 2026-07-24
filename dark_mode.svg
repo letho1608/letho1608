@@ -47,12 +47,12 @@ text, tspan {white-space: pre;}
 <text x="0" y="0" fill="#c9d1d9">
 <tspan x="430" y="30">letho1608@github</tspan><tspan y="30"> -———————————————————————————————————————————————</tspan>
 <tspan x="430" y="50" class="cc">. </tspan><tspan y="50" class="key">OS</tspan><tspan y="50" class="cc">: </tspan><tspan y="50" class="cc">.............. </tspan><tspan y="50" class="val">Windows 11</tspan>
-<tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">{{AGE_DATA}}</tspan>
-<tspan x="430" y="90" class="cc">. </tspan><tspan y="90" class="key">Name</tspan><tspan y="90" class="cc">: </tspan><tspan y="90" class="cc">............ </tspan><tspan y="90" class="val">{{NAME_DATA}}</tspan>
+<tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">22 years, 11 months, 8 days</tspan>
+<tspan x="430" y="90" class="cc">. </tspan><tspan y="90" class="key">Name</tspan><tspan y="90" class="cc">: </tspan><tspan y="90" class="cc">............ </tspan><tspan y="90" class="val">Le Quang Tho</tspan>
 <tspan x="430" y="110" class="cc">. </tspan><tspan y="110" class="key">Host</tspan><tspan y="110" class="cc">: </tspan><tspan y="110" class="cc">............ </tspan><tspan y="110" class="val">letho1608</tspan>
 <tspan x="430" y="130" class="cc">. </tspan><tspan y="130" class="key">Kernel</tspan><tspan y="130" class="cc">: </tspan><tspan y="130" class="cc">.......... </tspan><tspan y="130" class="val">AI Engineer / Full-Stack Dev</tspan>
 <tspan x="430" y="150" class="cc">. </tspan><tspan y="150" class="key">IDE</tspan><tspan y="150" class="cc">: </tspan><tspan y="150" class="cc">............. </tspan><tspan y="150" class="val">VSCode, Cursor, PyCharm</tspan>
-<tspan x="430" y="170" class="cc">. </tspan><tspan y="170" class="key">Account</tspan><tspan y="170" class="cc">: </tspan><tspan y="170" class="cc">......... </tspan><tspan y="170" class="val">{{ACCOUNT_DATA}}</tspan>
+<tspan x="430" y="170" class="cc">. </tspan><tspan y="170" class="key">Account</tspan><tspan y="170" class="cc">: </tspan><tspan y="170" class="cc">......... </tspan><tspan y="170" class="val">Since Oct 07, 2021 (5 yrs)</tspan>
 <tspan x="430" y="190" class="cc">. </tspan>
 <tspan x="430" y="210" class="cc">. </tspan><tspan y="210" class="key">Languages.Programming</tspan><tspan y="210" class="cc">: </tspan><tspan y="210" class="cc"></tspan><tspan y="210" class="val">Python, JavaScript, TypeScript</tspan>
 <tspan x="430" y="230" class="cc">. </tspan><tspan y="230" class="key">Languages.Computer</tspan><tspan y="230" class="cc">: </tspan><tspan y="230" class="cc"></tspan><tspan y="230" class="val">HTML, CSS, JSON, YAML, CUDA</tspan>
@@ -65,8 +65,8 @@ text, tspan {white-space: pre;}
 <tspan x="430" y="390" class="cc">. </tspan><tspan y="390" class="key">Email.Personal</tspan><tspan y="390" class="cc">: </tspan><tspan y="390" class="cc">.. </tspan><tspan y="390" class="val">letho16082003@gmail.com</tspan>
 <tspan x="430" y="410" class="cc">. </tspan><tspan y="410" class="key">GitHub</tspan><tspan y="410" class="cc">: </tspan><tspan y="410" class="cc">.......... </tspan><tspan y="410" class="val">letho1608</tspan>
 <tspan x="430" y="450">- GitHub Stats</tspan><tspan y="450"> -—————————————————————————————————————————</tspan>
-<tspan x="430" y="470" class="cc">. </tspan><tspan y="470" class="cc">Repos: </tspan><tspan y="470" class="val">{{REPO_DATA}}</tspan><tspan y="470" class="cc"> | Stars: </tspan><tspan y="470" class="val">{{STAR_DATA}}</tspan>
-<tspan x="430" y="490" class="cc">. </tspan><tspan y="490" class="cc">Followers: </tspan><tspan y="490" class="val">{{FOLLOWER_DATA}}</tspan><tspan y="490" class="cc"> | Following: </tspan><tspan y="490" class="val">{{FOLLOWING_DATA}}</tspan>
-<tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">........ </tspan><tspan y="510" class="val">{{TOP_REPO_DATA}}</tspan>
+<tspan x="430" y="470" class="cc">. </tspan><tspan y="470" class="cc">Repos: </tspan><tspan y="470" class="val">27</tspan><tspan y="470" class="cc"> | Stars: </tspan><tspan y="470" class="val">46</tspan>
+<tspan x="430" y="490" class="cc">. </tspan><tspan y="490" class="cc">Followers: </tspan><tspan y="490" class="val">4</tspan><tspan y="490" class="cc"> | Following: </tspan><tspan y="490" class="val">0</tspan>
+<tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">........ </tspan><tspan y="510" class="val">texor (24★)</tspan>
 </text>
 </svg>
