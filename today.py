@@ -407,9 +407,10 @@ def top_repo_getter(login):
     variables = {'login': login}
     request = simple_request(top_repo_getter.__name__, query, variables)
     edges = request.json()['data']['user']['repositories'].get('edges') or []
-    if edges:
+    if edges and edges[0].get('node'):
         repo = edges[0]['node']
-        return '{} ({:,}\u2605)'.format(repo['nameWithOwner'].split('/')[-1], repo['stargazers']['totalCount'])
+        if repo.get('nameWithOwner') and repo.get('stargazers'):
+            return '{} ({:,}\u2605)'.format(repo['nameWithOwner'].split('/')[-1], repo['stargazers']['totalCount'])
     return 'N/A'
 
 
@@ -484,13 +485,29 @@ if __name__ == '__main__':
     total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
-    star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
-    repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
-    contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    try:
+        star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
+    except Exception as e:
+        print('   star query failed:', e)
+        star_data, star_time = 0, 0
+    try:
+        repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+    except Exception as e:
+        print('   repo query failed:', e)
+        repo_data, repo_time = 0, 0
+    try:
+        contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    except Exception as e:
+        print('   contrib query failed:', e)
+        contrib_data, contrib_time = 0, 0
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
     following_data, following_time = perf_counter(following_getter, USER_NAME)
     formatter('following', following_time)
-    top_repo_data, top_repo_time = perf_counter(top_repo_getter, USER_NAME)
+    try:
+        top_repo_data, top_repo_time = perf_counter(top_repo_getter, USER_NAME)
+    except Exception as e:
+        print('   top repo query failed:', e)
+        top_repo_data, top_repo_time = 'N/A', 0
     formatter('top repo', top_repo_time)
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
