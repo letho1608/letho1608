@@ -9,7 +9,7 @@ font-display: swap;
 size-adjust: 109%;
 }
 .key {fill: #ffa657;}
-.value {fill: #a5d6ff;}
+.value, .val {fill: #a5d6ff;}
 .addColor {fill: #3fb950;}
 .delColor {fill: #f85149;}
 .cc {fill: #616e7f;}
@@ -47,29 +47,29 @@ text, tspan {white-space: pre;}
 <text x="0" y="0" fill="#c9d1d9">
 <tspan x="430" y="30">letho1608@github</tspan><tspan y="30"> -———————————————————————————————————————————————</tspan>
 <tspan x="430" y="50" class="cc">. </tspan><tspan y="50" class="key">OS</tspan><tspan y="50" class="cc">: </tspan><tspan y="50" class="cc">.............. </tspan><tspan y="50" class="val">Windows 11</tspan>
-<tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">22 years, 11 months, 8 days</tspan>
+<tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">23 years, 2 months, 23 days</tspan>
 <tspan x="430" y="90" class="cc">. </tspan><tspan y="90" class="key">Name</tspan><tspan y="90" class="cc">: </tspan><tspan y="90" class="cc">............ </tspan><tspan y="90" class="val">Le Quang Tho</tspan>
 <tspan x="430" y="110" class="cc">. </tspan><tspan y="110" class="key">Host</tspan><tspan y="110" class="cc">: </tspan><tspan y="110" class="cc">............ </tspan><tspan y="110" class="val">letho1608</tspan>
-<tspan x="430" y="130" class="cc">. </tspan><tspan y="130" class="key">Kernel</tspan><tspan y="130" class="cc">: </tspan><tspan y="130" class="cc">.......... </tspan><tspan y="130" class="val">AI Engineer / Full-Stack Dev</tspan>
+<tspan x="430" y="130" class="cc">. </tspan><tspan y="130" class="key">Kernel</tspan><tspan y="130" class="cc">: </tspan><tspan y="130" class="cc">.......... </tspan><tspan y="130" class="val">AI Engineer</tspan>
 <tspan x="430" y="150" class="cc">. </tspan><tspan y="150" class="key">IDE</tspan><tspan y="150" class="cc">: </tspan><tspan y="150" class="cc">............. </tspan><tspan y="150" class="val">VSCode, Cursor, PyCharm</tspan>
 <tspan x="430" y="170" class="cc">. </tspan><tspan y="170" class="key">Account</tspan><tspan y="170" class="cc">: </tspan><tspan y="170" class="cc">......... </tspan><tspan y="170" class="val">Since Oct 07, 2021 (5 yrs)</tspan>
-<tspan x="430" y="190" class="cc">. </tspan><tspan y="190" class="key">Shell</tspan><tspan y="190" class="cc">: </tspan><tspan y="190" class="cc">............ </tspan><tspan y="190" class="val">PowerShell 7</tspan>
-<tspan x="430" y="210" class="cc">. </tspan><tspan y="210" class="key">Languages.Programming</tspan><tspan y="210" class="cc">: </tspan><tspan y="210" class="cc"></tspan><tspan y="210" class="val">Python, JavaScript, TypeScript</tspan>
-<tspan x="430" y="230" class="cc">. </tspan><tspan y="230" class="key">Languages.Computer</tspan><tspan y="230" class="cc">: </tspan><tspan y="230" class="cc"></tspan><tspan y="230" class="val">HTML, CSS, JSON, YAML, CUDA</tspan>
-<tspan x="430" y="250" class="cc">. </tspan><tspan y="250" class="key">Languages.Real</tspan><tspan y="250" class="cc">: </tspan><tspan y="250" class="cc">.. </tspan><tspan y="250" class="val">Vietnamese, English</tspan>
+<tspan x="430" y="190" class="cc">. </tspan><tspan y="190" class="key">Shell</tspan><tspan y="190" class="cc">: </tspan><tspan y="190" class="cc">........... </tspan><tspan y="190" class="val">PowerShell 7, Bash</tspan>
+<tspan x="430" y="210" class="cc">. </tspan><tspan y="210" class="key">Languages.Programming</tspan><tspan y="210" class="cc">: </tspan><tspan y="210" class="cc"></tspan><tspan y="210" class="val">Python, C++, CUDA</tspan>
+<tspan x="430" y="230" class="cc">. </tspan><tspan y="230" class="key">Languages.Computer</tspan><tspan y="230" class="cc">: </tspan><tspan y="230" class="cc">.. </tspan><tspan y="230" class="val">YAML, JSON, LaTeX, Markdown</tspan>
+<tspan x="430" y="250" class="cc">. </tspan><tspan y="250" class="key">Languages.Real</tspan><tspan y="250" class="cc">: </tspan><tspan y="250" class="cc">...... </tspan><tspan y="250" class="val">Vietnamese, English</tspan>
 <tspan x="430" y="270" class="cc">. </tspan><tspan y="270" class="key">Editor</tspan><tspan y="270" class="cc">: </tspan><tspan y="270" class="cc">........... </tspan><tspan y="270" class="val">Neovim, Vim</tspan>
-<tspan x="430" y="290" class="cc">. </tspan><tspan y="290" class="key">Stack.AI</tspan><tspan y="290" class="cc">: </tspan><tspan y="290" class="cc">........ </tspan><tspan y="290" class="val">PyTorch, TensorFlow, Ollama</tspan>
-<tspan x="430" y="310" class="cc">. </tspan><tspan y="310" class="key">Stack.Web</tspan><tspan y="310" class="cc">: </tspan><tspan y="310" class="cc">....... </tspan><tspan y="310" class="val">React, Node.js, Docker</tspan>
-<tspan x="430" y="330" class="cc">. </tspan><tspan y="330" class="key">Interests</tspan><tspan y="330" class="cc">: </tspan><tspan y="330" class="cc">....... </tspan><tspan y="330" class="val">LLMs, NLP, Computer Vision</tspan>
+<tspan x="430" y="290" class="cc">. </tspan><tspan y="290" class="key">Stack.AI</tspan><tspan y="290" class="cc">: </tspan><tspan y="290" class="cc">......... </tspan><tspan y="290" class="val">PyTorch, Hugging Face, Ollama</tspan>
+<tspan x="430" y="310" class="cc">. </tspan><tspan y="310" class="key">Stack.MLOps</tspan><tspan y="310" class="cc">: </tspan><tspan y="310" class="cc">...... </tspan><tspan y="310" class="val">Docker, ONNX, vLLM, TensorRT</tspan>
+<tspan x="430" y="330" class="cc">. </tspan><tspan y="330" class="key">Interests</tspan><tspan y="330" class="cc">: </tspan><tspan y="330" class="cc">........ </tspan><tspan y="330" class="val">LLMs, Computer Vision, Agentic AI</tspan>
 <tspan x="430" y="350" class="cc">. </tspan><tspan y="350" class="key">Blog</tspan><tspan y="350" class="cc">: </tspan><tspan y="350" class="cc">............. </tspan><tspan y="350" class="val">letho1608.github.io</tspan>
 <tspan x="430" y="370">- Contact</tspan><tspan y="370"> -———————————————————————————————————————————————</tspan>
-<tspan x="430" y="390" class="cc">. </tspan><tspan y="390" class="key">Email.Personal</tspan><tspan y="390" class="cc">: </tspan><tspan y="390" class="cc">.. </tspan><tspan y="390" class="val">letho16082003@gmail.com</tspan>
-<tspan x="430" y="410" class="cc">. </tspan><tspan y="410" class="key">GitHub</tspan><tspan y="410" class="cc">: </tspan><tspan y="410" class="cc">.......... </tspan><tspan y="410" class="val">letho1608</tspan>
-<tspan x="430" y="430" class="cc">. </tspan><tspan y="430" class="cc">Gists: </tspan><tspan y="430" class="val">5</tspan><tspan y="430" class="cc"> | PRs: </tspan><tspan y="430" class="val">12</tspan>
+<tspan x="430" y="390" class="cc">. </tspan><tspan y="390" class="key">Email.Personal</tspan><tspan y="390" class="cc">: </tspan><tspan y="390" class="cc">... </tspan><tspan y="390" class="val">letho16082003@gmail.com</tspan>
+<tspan x="430" y="410" class="cc">. </tspan><tspan y="410" class="key">GitHub</tspan><tspan y="410" class="cc">: </tspan><tspan y="410" class="cc">........... </tspan><tspan y="410" class="val">letho1608</tspan>
+<tspan x="430" y="430" class="cc">. </tspan><tspan y="430" class="key">Location</tspan><tspan y="430" class="cc">: </tspan><tspan y="430" class="cc">......... </tspan><tspan y="430" class="val">Vietnam 🇻🇳</tspan>
 <tspan x="430" y="450">- GitHub Stats</tspan><tspan y="450"> -—————————————————————————————————————————</tspan>
 <tspan x="430" y="470" class="cc">. </tspan><tspan y="470" class="cc">Repos: </tspan><tspan y="470" class="val">27</tspan><tspan y="470" class="cc"> | Stars: </tspan><tspan y="470" class="val">46</tspan>
-<tspan x="430" y="490" class="cc">. </tspan><tspan y="490" class="cc">Followers: </tspan><tspan y="490" class="val">4</tspan><tspan y="490" class="cc"> | Following: </tspan><tspan y="490" class="val">0</tspan>
-<tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">........ </tspan><tspan y="510" class="val">texor (24★)</tspan>
-<tspan x="430" y="530" class="cc">. </tspan><tspan y="530" class="key">Loc</tspan><tspan y="530" class="cc">: </tspan><tspan y="530" class="cc">............. </tspan><tspan y="530" class="val">Vietnam 🇻🇳</tspan>
+<tspan x="430" y="490" class="cc">. </tspan><tspan y="490" class="cc">Followers: </tspan><tspan y="490" class="val">6</tspan><tspan y="490" class="cc"> | Following: </tspan><tspan y="490" class="val">0</tspan>
+<tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">......... </tspan><tspan y="510" class="val">texor (24★)</tspan>
+<tspan x="430" y="530" class="cc">. </tspan><tspan y="530" class="key">Total LOC</tspan><tspan y="530" class="cc">: </tspan><tspan y="530" class="cc">........ </tspan><tspan y="530" class="val">256,284</tspan>
 </text>
 </svg>

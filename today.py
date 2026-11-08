@@ -9,8 +9,9 @@ import hashlib
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
-HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME'] # 'letho1608'
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN') or os.environ.get('GITHUB_TOKEN') or ''
+HEADERS = {'authorization': 'token ' + ACCESS_TOKEN} if ACCESS_TOKEN else {}
+USER_NAME = os.environ.get('USER_NAME') or 'letho1608'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0, 'name_getter': 0, 'following_getter': 0, 'top_repo_getter': 0}
 
 
@@ -416,26 +417,46 @@ def top_repo_getter(login):
 
 def svg_overwrite(age_data, name_data, account_data, repo_data, star_data, follower_data, following_data, top_repo_data, loc_data):
     """
-    Reads the SVG template files, replaces placeholders with real data, and writes back.
+    Reads the SVG template files, replaces placeholders or updates existing values with real data, and writes back.
     Updates both dark_mode.svg and light_mode.svg.
     """
+    import re
     replacements = {
-        '{{AGE_DATA}}': age_data,
-        '{{NAME_DATA}}': name_data,
-        '{{ACCOUNT_DATA}}': account_data,
-        '{{REPO_DATA}}': repo_data,
-        '{{STAR_DATA}}': star_data,
-        '{{FOLLOWER_DATA}}': follower_data,
-        '{{FOLLOWING_DATA}}': following_data,
-        '{{TOP_REPO_DATA}}': top_repo_data,
+        '{{AGE_DATA}}': str(age_data),
+        '{{NAME_DATA}}': str(name_data),
+        '{{ACCOUNT_DATA}}': str(account_data),
+        '{{REPO_DATA}}': str(repo_data),
+        '{{STAR_DATA}}': str(star_data),
+        '{{FOLLOWER_DATA}}': str(follower_data),
+        '{{FOLLOWING_DATA}}': str(following_data),
+        '{{TOP_REPO_DATA}}': str(top_repo_data),
+        '{{LOC_DATA}}': str(loc_data),
     }
     for svg_file in ['dark_mode.svg', 'light_mode.svg']:
         with open(svg_file, 'r', encoding='utf-8') as f:
-            content = f.read()
+            svg_content = f.read()
         for placeholder, value in replacements.items():
-            content = content.replace(placeholder, value)
+            svg_content = svg_content.replace(placeholder, value)
+
+        # Regex replacement to ensure daily scheduled updates work continuously
+        svg_content = re.sub(r'(<tspan y="70" class="(?:val|value)">)[^<]*(</tspan>)', rf'\g<1>{age_data}\g<2>', svg_content)
+        svg_content = re.sub(r'(<tspan y="90" class="(?:val|value)">)[^<]*(</tspan>)', rf'\g<1>{name_data}\g<2>', svg_content)
+        svg_content = re.sub(r'(<tspan y="170" class="(?:val|value)">)[^<]*(</tspan>)', rf'\g<1>{account_data}\g<2>', svg_content)
+        svg_content = re.sub(
+            r'(<tspan y="470" class="cc">Repos:\s*</tspan><tspan y="470" class="(?:val|value)">)[^<]*(</tspan><tspan y="470" class="cc">\s*\|\s*Stars:\s*</tspan><tspan y="470" class="(?:val|value)">)[^<]*(</tspan>)',
+            rf'\g<1>{repo_data}\g<2>{star_data}\g<3>',
+            svg_content
+        )
+        svg_content = re.sub(
+            r'(<tspan y="490" class="cc">Followers:\s*</tspan><tspan y="490" class="(?:val|value)">)[^<]*(</tspan><tspan y="490" class="cc">\s*\|\s*Following:\s*</tspan><tspan y="490" class="(?:val|value)">)[^<]*(</tspan>)',
+            rf'\g<1>{follower_data}\g<2>{following_data}\g<3>',
+            svg_content
+        )
+        svg_content = re.sub(r'(<tspan y="510" class="key">Top Repo</tspan>.*?<tspan y="510" class="(?:val|value)">)[^<]*(</tspan>)', rf'\g<1>{top_repo_data}\g<2>', svg_content)
+        svg_content = re.sub(r'(<tspan y="530" class="key">Total LOC</tspan>.*?<tspan y="530" class="(?:val|value)">)[^<]*(</tspan>)', rf'\g<1>{loc_data}\g<2>', svg_content)
+
         with open(svg_file, 'w', encoding='utf-8') as f:
-            f.write(content)
+            f.write(svg_content)
         print('   Updated', svg_file)
 
 
@@ -541,5 +562,3 @@ if __name__ == '__main__':
         loc_data=total_loc[2] # total LOC (net)
     )
     print('Done!')
- 
- 
