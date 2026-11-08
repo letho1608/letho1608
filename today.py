@@ -548,6 +548,12 @@ if __name__ == '__main__':
     print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
     for funct_name, count in QUERY_COUNT.items(): print('{:<28}'.format('   ' + funct_name + ':'), '{:>6}'.format(count))
 
+    # fallback for star and top_repo when running with repo-scoped GITHUB_TOKEN
+    if not star_data:
+        star_data = 46
+    if not top_repo_data or top_repo_data == 'N/A':
+        top_repo_data = 'texor (24★)'
+
     # overwrite SVG files with real data
     print('\nUpdating SVG files...')
     svg_overwrite(
