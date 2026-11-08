@@ -17,59 +17,59 @@ text, tspan {white-space: pre;}
 </style>
 <rect width="985px" height="530px" fill="#f6f8fa" rx="15"/>
 <text x="0" y="0" fill="#24292f">
-<tspan x="15" y="30" class="addColor">$ python train.py --config train.yaml</tspan>
-<tspan x="15" y="50" class="cc"> Hyperparams: epochs=100 lr=3e-4 seed=42</tspan>
-<tspan x="15" y="70" class="cc"> Epoch    Loss       Acc      LR</tspan>
-<tspan x="15" y="90" class="cc"> -----    ------     ----     ------</tspan>
-<tspan x="15" y="110" class="value"> 001      2.8431     0.12     3.0e-4</tspan>
-<tspan x="15" y="130" class="value"> 002      2.5102     0.18     3.0e-4</tspan>
-<tspan x="15" y="150" class="value"> 003      2.1890     0.25     3.0e-4</tspan>
-<tspan x="15" y="170" class="value"> 005      1.7654     0.37     2.5e-4</tspan>
-<tspan x="15" y="190" class="value"> 010      1.2055     0.58     2.0e-4</tspan>
-<tspan x="15" y="210" class="value"> 020      0.8321     0.73     1.5e-4</tspan>
-<tspan x="15" y="230" class="value"> 030      0.5643     0.84     1.0e-4</tspan>
-<tspan x="15" y="250" class="value"> 050      0.2891     0.92     5.0e-5</tspan>
-<tspan x="15" y="270" class="value"> 075      0.1503     0.96     2.0e-5</tspan>
-<tspan x="15" y="290" class="addColor"> 100      0.0847     0.98     1.0e-5</tspan>
-<tspan x="15" y="310" class="cc"> Eval     0.0912     0.98     —</tspan>
-<tspan x="15" y="330" class="cc"> Save     best.pt    496MB    —</tspan>
-<tspan x="15" y="350" class="value"> GPU      RTX 4090   24GB     CUDA 12</tspan>
-<tspan x="15" y="370" class="value"> VRAM     18.2GB     Util     97%</tspan>
-<tspan x="15" y="390" class="value"> FLOPs    2.1e18     14.2k    —</tspan>
-<tspan x="15" y="410" class="cc"> Core     24         Clock    4.2GHz</tspan>
-<tspan x="15" y="430" class="cc"> Time     4h 32m     Done     —</tspan>
-<tspan x="15" y="450" class="cc"> Params   7.8B       Opt      AdamW</tspan>
-<tspan x="15" y="470" class="cc"> Dataset  50k        Batch    32</tspan>
-<tspan x="15" y="490" class="cc"> Grad     1.0        dtype    bf16</tspan>
-<tspan x="15" y="510" class="addColor"> Training complete. Ready    ✓</tspan>
+<tspan x="15" y="30" class="addColor">$ torchrun --nproc_per_node=1 train.py</tspan>
+<tspan x="15" y="50" class="cc"> [config] llama-7b-lora.yaml | seed=42</tspan>
+<tspan x="15" y="70" class="cc"> Step     Loss     PPL       Tokens/s   LR</tspan>
+<tspan x="15" y="90" class="cc"> -----    ------   -------   --------   ------</tspan>
+<tspan x="15" y="110" class="value"> 00100    2.8431   17.169    14.2k      3.0e-4</tspan>
+<tspan x="15" y="130" class="value"> 00250    2.1054   8.210     14.5k      2.8e-4</tspan>
+<tspan x="15" y="150" class="value"> 00500    1.6230   5.068     14.4k      2.5e-4</tspan>
+<tspan x="15" y="170" class="value"> 01000    1.2185   3.382     14.6k      2.0e-4</tspan>
+<tspan x="15" y="190" class="value"> 02000    0.8421   2.321     14.5k      1.5e-4</tspan>
+<tspan x="15" y="210" class="value"> 03500    0.5124   1.669     14.6k      1.0e-4</tspan>
+<tspan x="15" y="230" class="value"> 05000    0.2847   1.329     14.5k      5.0e-5</tspan>
+<tspan x="15" y="250" class="value"> 07500    0.1492   1.160     14.6k      2.0e-5</tspan>
+<tspan x="15" y="270" class="addColor"> 10000    0.0841   1.087     14.5k      1.0e-5</tspan>
+<tspan x="15" y="290" class="cc"> Eval     0.0894   1.093     (val-loss) ✓</tspan>
+<tspan x="15" y="310" class="cc"> Checkpt  adapter.safetensors   496MB   ✓</tspan>
+<tspan x="15" y="330" class="value"> Compute  NVIDIA RTX 4090 24GB  CUDA 12.4</tspan>
+<tspan x="15" y="350" class="value"> VRAM     19.8GB / 24GB         Util  98%</tspan>
+<tspan x="15" y="370" class="value"> Arch     Transformer (7.8B)    bf16+FA2</tspan>
+<tspan x="15" y="390" class="cc"> Context  4096 tokens           Batch  32</tspan>
+<tspan x="15" y="410" class="cc"> Dataset  RedPajama + SlimPajama 50k</tspan>
+<tspan x="15" y="430" class="cc"> Optim    AdamW (Cosine Decay)  Grad  1.0</tspan>
+<tspan x="15" y="450" class="cc"> Speed    14.5k tok/s           TFLOPs 165</tspan>
+<tspan x="15" y="470" class="cc"> Elapsed  04h:28m:12s           Status Done</tspan>
+<tspan x="15" y="490" class="addColor"> ✓ Training converged successfully.</tspan>
+<tspan x="15" y="510" class="addColor"> Model exported to ./weights/best/</tspan>
 <tspan x="15" y="530" class="addColor">$ _</tspan>
 </text>
 <text x="0" y="0" fill="#24292f">
 <tspan x="430" y="30">letho1608@github</tspan><tspan y="30"> -———————————————————————————————————————————————</tspan>
-<tspan x="430" y="50" class="cc">. </tspan><tspan y="50" class="key">OS</tspan><tspan y="50" class="cc">: </tspan><tspan y="50" class="cc">.............. </tspan><tspan y="50" class="val">Windows 11</tspan>
+<tspan x="430" y="50" class="cc">. </tspan><tspan y="50" class="key">Host</tspan><tspan y="50" class="cc">: </tspan><tspan y="50" class="cc">............ </tspan><tspan y="50" class="val">letho1608</tspan>
 <tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">23 years, 2 months, 23 days</tspan>
 <tspan x="430" y="90" class="cc">. </tspan><tspan y="90" class="key">Name</tspan><tspan y="90" class="cc">: </tspan><tspan y="90" class="cc">............ </tspan><tspan y="90" class="val">Le Quang Tho</tspan>
-<tspan x="430" y="110" class="cc">. </tspan><tspan y="110" class="key">Host</tspan><tspan y="110" class="cc">: </tspan><tspan y="110" class="cc">............ </tspan><tspan y="110" class="val">letho1608</tspan>
-<tspan x="430" y="130" class="cc">. </tspan><tspan y="130" class="key">Kernel</tspan><tspan y="130" class="cc">: </tspan><tspan y="130" class="cc">.......... </tspan><tspan y="130" class="val">AI Engineer</tspan>
-<tspan x="430" y="150" class="cc">. </tspan><tspan y="150" class="key">IDE</tspan><tspan y="150" class="cc">: </tspan><tspan y="150" class="cc">............. </tspan><tspan y="150" class="val">VSCode, Cursor, PyCharm</tspan>
+<tspan x="430" y="110" class="cc">. </tspan><tspan y="110" class="key">Role</tspan><tspan y="110" class="cc">: </tspan><tspan y="110" class="cc">............ </tspan><tspan y="110" class="val">AI Engineer | Deep Learning &amp; Systems</tspan>
+<tspan x="430" y="130" class="cc">. </tspan><tspan y="130" class="key">Focus</tspan><tspan y="130" class="cc">: </tspan><tspan y="130" class="cc">........... </tspan><tspan y="110" class="val">Large Language Models &amp; Agentic AI</tspan>
+<tspan x="430" y="150" class="cc">. </tspan><tspan y="150" class="key">Hardware</tspan><tspan y="150" class="cc">: </tspan><tspan y="150" class="cc">........ </tspan><tspan y="150" class="val">RTX 4090 24GB | 24 Cores @ 4.2GHz</tspan>
 <tspan x="430" y="170" class="cc">. </tspan><tspan y="170" class="key">Account</tspan><tspan y="170" class="cc">: </tspan><tspan y="170" class="cc">......... </tspan><tspan y="170" class="val">Since Oct 07, 2021 (5 yrs)</tspan>
-<tspan x="430" y="190" class="cc">. </tspan><tspan y="190" class="key">Shell</tspan><tspan y="190" class="cc">: </tspan><tspan y="190" class="cc">........... </tspan><tspan y="190" class="val">PowerShell 7, Bash</tspan>
-<tspan x="430" y="210" class="cc">. </tspan><tspan y="210" class="key">Languages.Programming</tspan><tspan y="210" class="cc">: </tspan><tspan y="210" class="cc"></tspan><tspan y="210" class="val">Python, C++, CUDA</tspan>
-<tspan x="430" y="230" class="cc">. </tspan><tspan y="230" class="key">Languages.Computer</tspan><tspan y="230" class="cc">: </tspan><tspan y="230" class="cc">.. </tspan><tspan y="230" class="val">YAML, JSON, LaTeX, Markdown</tspan>
-<tspan x="430" y="250" class="cc">. </tspan><tspan y="250" class="key">Languages.Real</tspan><tspan y="250" class="cc">: </tspan><tspan y="250" class="cc">...... </tspan><tspan y="250" class="val">Vietnamese, English</tspan>
-<tspan x="430" y="270" class="cc">. </tspan><tspan y="270" class="key">Editor</tspan><tspan y="270" class="cc">: </tspan><tspan y="270" class="cc">........... </tspan><tspan y="270" class="val">Neovim, Vim</tspan>
-<tspan x="430" y="290" class="cc">. </tspan><tspan y="290" class="key">Stack.AI</tspan><tspan y="290" class="cc">: </tspan><tspan y="290" class="cc">......... </tspan><tspan y="290" class="val">PyTorch, Hugging Face, Ollama</tspan>
-<tspan x="430" y="310" class="cc">. </tspan><tspan y="310" class="key">Stack.MLOps</tspan><tspan y="310" class="cc">: </tspan><tspan y="310" class="cc">...... </tspan><tspan y="310" class="val">Docker, ONNX, vLLM, TensorRT</tspan>
-<tspan x="430" y="330" class="cc">. </tspan><tspan y="330" class="key">Interests</tspan><tspan y="330" class="cc">: </tspan><tspan y="330" class="cc">........ </tspan><tspan y="330" class="val">LLMs, Computer Vision, Agentic AI</tspan>
-<tspan x="430" y="350" class="cc">. </tspan><tspan y="350" class="key">Blog</tspan><tspan y="350" class="cc">: </tspan><tspan y="350" class="cc">............. </tspan><tspan y="350" class="val">letho1608.github.io</tspan>
-<tspan x="430" y="370">- Contact</tspan><tspan y="370"> -———————————————————————————————————————————————</tspan>
-<tspan x="430" y="390" class="cc">. </tspan><tspan y="390" class="key">Email.Personal</tspan><tspan y="390" class="cc">: </tspan><tspan y="390" class="cc">... </tspan><tspan y="390" class="val">letho16082003@gmail.com</tspan>
-<tspan x="430" y="410" class="cc">. </tspan><tspan y="410" class="key">GitHub</tspan><tspan y="410" class="cc">: </tspan><tspan y="410" class="cc">........... </tspan><tspan y="410" class="val">letho1608</tspan>
-<tspan x="430" y="430" class="cc">. </tspan><tspan y="430" class="key">Location</tspan><tspan y="430" class="cc">: </tspan><tspan y="430" class="cc">......... </tspan><tspan y="430" class="val">Vietnam 🇻🇳</tspan>
-<tspan x="430" y="450">- GitHub Stats</tspan><tspan y="450"> -—————————————————————————————————————————</tspan>
+<tspan x="430" y="190" class="cc">. </tspan><tspan y="190" class="key">OS</tspan><tspan y="190" class="cc">: </tspan><tspan y="190" class="cc">.............. </tspan><tspan y="190" class="val">Ubuntu 24.04 LTS (WSL2), Win 11</tspan>
+<tspan x="430" y="210">- Core Stack -——————————————————————————————————————————</tspan>
+<tspan x="430" y="230" class="cc">. </tspan><tspan y="230" class="key">Languages</tspan><tspan y="230" class="cc">: </tspan><tspan y="230" class="cc">....... </tspan><tspan y="230" class="val">Python, C/C++, CUDA</tspan>
+<tspan x="430" y="250" class="cc">. </tspan><tspan y="250" class="key">Frameworks</tspan><tspan y="250" class="cc">: </tspan><tspan y="250" class="cc">...... </tspan><tspan y="250" class="val">PyTorch, Transformers, JAX, NumPy</tspan>
+<tspan x="430" y="270" class="cc">. </tspan><tspan y="270" class="key">Inference/Ops</tspan><tspan y="270" class="cc">: </tspan><tspan y="270" class="cc">... </tspan><tspan y="270" class="val">TensorRT, vLLM, ONNX, Docker</tspan>
+<tspan x="430" y="290" class="cc">. </tspan><tspan y="290" class="key">Research</tspan><tspan y="290" class="cc">: </tspan><tspan y="290" class="cc">........ </tspan><tspan y="290" class="val">Autograd Engines, Model Optimization</tspan>
+<tspan x="430" y="310" class="cc">. </tspan><tspan y="310" class="key">Domains</tspan><tspan y="310" class="cc">: </tspan><tspan y="310" class="cc">......... </tspan><tspan y="310" class="val">LLMs, Computer Vision, Agentic AI</tspan>
+<tspan x="430" y="330" class="cc">. </tspan><tspan y="330" class="key">Tooling</tspan><tspan y="330" class="cc">: </tspan><tspan y="330" class="cc">......... </tspan><tspan y="330" class="val">Neovim, Cursor, Git, zsh</tspan>
+<tspan x="430" y="350" class="cc">. </tspan><tspan y="350" class="key">Formats</tspan><tspan y="350" class="cc">: </tspan><tspan y="350" class="cc">......... </tspan><tspan y="350" class="val">SafeTensors, GGUF, YAML, LaTeX</tspan>
+<tspan x="430" y="370">- Connect &amp; Projects -——————————————————————————————————</tspan>
+<tspan x="430" y="390" class="cc">. </tspan><tspan y="390" class="key">Email</tspan><tspan y="390" class="cc">: </tspan><tspan y="390" class="cc">........... </tspan><tspan y="390" class="val">letho16082003@gmail.com</tspan>
+<tspan x="430" y="410" class="cc">. </tspan><tspan y="410" class="key">Web</tspan><tspan y="410" class="cc">: </tspan><tspan y="410" class="cc">............. </tspan><tspan y="410" class="val">letho1608.github.io</tspan>
+<tspan x="430" y="430" class="cc">. </tspan><tspan y="430" class="key">Location</tspan><tspan y="430" class="cc">: </tspan><tspan y="430" class="cc">........ </tspan><tspan y="430" class="val">Vietnam 🇻🇳</tspan>
+<tspan x="430" y="450">- GitHub Metrics -——————————————————————————————————————</tspan>
 <tspan x="430" y="470" class="cc">. </tspan><tspan y="470" class="cc">Repos: </tspan><tspan y="470" class="val">25</tspan><tspan y="470" class="cc"> | Stars: </tspan><tspan y="470" class="val">46</tspan>
 <tspan x="430" y="490" class="cc">. </tspan><tspan y="490" class="cc">Followers: </tspan><tspan y="490" class="val">6</tspan><tspan y="490" class="cc"> | Following: </tspan><tspan y="490" class="val">0</tspan>
-<tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">......... </tspan><tspan y="510" class="val">texor (24★)</tspan>
-<tspan x="430" y="530" class="cc">. </tspan><tspan y="530" class="key">Total LOC</tspan><tspan y="530" class="cc">: </tspan><tspan y="530" class="cc">........ </tspan><tspan y="530" class="val">256,505</tspan>
+<tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">........ </tspan><tspan y="510" class="val">texor (24★)</tspan>
+<tspan x="430" y="530" class="cc">. </tspan><tspan y="530" class="key">Total LOC</tspan><tspan y="530" class="cc">: </tspan><tspan y="530" class="cc">....... </tspan><tspan y="530" class="val">256,500</tspan>
 </text>
 </svg>
