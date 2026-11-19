@@ -47,7 +47,7 @@ text, tspan {white-space: pre;}
 <text x="0" y="0" fill="#c9d1d9">
 <tspan x="430" y="30">letho1608@github</tspan><tspan y="30"> -———————————————————————————————————————————————</tspan>
 <tspan x="430" y="50" class="cc">. </tspan><tspan y="50" class="key">Host</tspan><tspan y="50" class="cc">: </tspan><tspan y="50" class="cc">............ </tspan><tspan y="50" class="val">letho1608</tspan>
-<tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">23 years, 3 months, 2 days</tspan>
+<tspan x="430" y="70" class="cc">. </tspan><tspan y="70" class="key">Uptime</tspan><tspan y="70" class="cc">: </tspan><tspan y="70" class="cc">.......... </tspan><tspan y="70" class="val">23 years, 3 months, 3 days</tspan>
 <tspan x="430" y="90" class="cc">. </tspan><tspan y="90" class="key">Name</tspan><tspan y="90" class="cc">: </tspan><tspan y="90" class="cc">............ </tspan><tspan y="90" class="val">Le Quang Tho</tspan>
 <tspan x="430" y="110" class="cc">. </tspan><tspan y="110" class="key">Role</tspan><tspan y="110" class="cc">: </tspan><tspan y="110" class="cc">............ </tspan><tspan y="110" class="val">AI Engineer | Deep Learning &amp; Systems</tspan>
 <tspan x="430" y="130" class="cc">. </tspan><tspan y="130" class="key">Focus</tspan><tspan y="130" class="cc">: </tspan><tspan y="130" class="cc">........... </tspan><tspan y="110" class="val">Large Language Models &amp; Agentic AI</tspan>
@@ -70,6 +70,6 @@ text, tspan {white-space: pre;}
 <tspan x="430" y="470" class="cc">. </tspan><tspan y="470" class="cc">Repos: </tspan><tspan y="470" class="val">26</tspan><tspan y="470" class="cc"> | Stars: </tspan><tspan y="470" class="val">46</tspan>
 <tspan x="430" y="490" class="cc">. </tspan><tspan y="490" class="cc">Followers: </tspan><tspan y="490" class="val">6</tspan><tspan y="490" class="cc"> | Following: </tspan><tspan y="490" class="val">0</tspan>
 <tspan x="430" y="510" class="cc">. </tspan><tspan y="510" class="key">Top Repo</tspan><tspan y="510" class="cc">: </tspan><tspan y="510" class="cc">........ </tspan><tspan y="510" class="val">texor (24★)</tspan>
-<tspan x="430" y="530" class="cc">. </tspan><tspan y="530" class="key">Total LOC</tspan><tspan y="530" class="cc">: </tspan><tspan y="530" class="cc">....... </tspan><tspan y="530" class="val">292,312</tspan>
+<tspan x="430" y="530" class="cc">. </tspan><tspan y="530" class="key">Total LOC</tspan><tspan y="530" class="cc">: </tspan><tspan y="530" class="cc">....... </tspan><tspan y="530" class="val">290,916</tspan>
 </text>
 </svg>
